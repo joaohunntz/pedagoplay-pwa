@@ -65,7 +65,7 @@ export default function App() {
 
   const handleEntrarAgora = () => {
     setTimeout(() => {
-      window.location.href = 'https://app--pedagoplay-46c380c7.base44.app/'
+      window.location.href = 'https://app--pedago-play-46c380c7.base44.app'
     }, 2000)
   }
 
@@ -85,7 +85,7 @@ export default function App() {
     >
       <img
         src="/corujinha.png"
-        alt="Pedagoteca"
+        alt="PedagoPlay"
         width={160}
         height={160}
         style={{ marginBottom: 20 }}
@@ -155,7 +155,7 @@ export default function App() {
           </button>
 
           <p style={{ color: '#475569', maxWidth: 320 }}>
-            Enable Notifications by clicking the button below and stay updated with all Pedagoteca's news! 🎉
+            Enable Notifications by clicking the button below and stay updated with all PedagoPlay news! 🎉
           </p>
 
           <button
