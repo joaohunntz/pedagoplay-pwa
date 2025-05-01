@@ -6,7 +6,7 @@ export default function Painel() {
 
   return (
     <div style={{ padding: 20 }}>
-      <h1>Bem-vindo à Pedagoteca! 🎓</h1>
+      <h1>Welcome to PedagoPlay! 🎓</h1>
       <button onClick={logout}>Sair</button>
     </div>
   )

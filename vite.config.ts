@@ -10,8 +10,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['icon-192.png', 'icon-512.png'],
       manifest: {
-        name: 'Pedagoteca',
-        short_name: 'Pedagoteca',
+        name: 'PedagoPlay',
+        short_name: 'PedagoPlay',
         start_url: '/?source=pwa', // ESSENCIAL pro iOS abrir certo
         display: 'standalone',
         background_color: '#ffffff',

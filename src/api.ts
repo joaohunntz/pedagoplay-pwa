@@ -2,7 +2,7 @@ import axios from 'axios'
 
 // Base da API sem /api
 const api = axios.create({
-  baseURL: 'https://app--pedagoteca-e66859b3.base44.app',
+  baseURL: 'https://app--pedago-play-46c380c7.base44.app',
   headers: {
     'Content-Type': 'application/json'
   }
