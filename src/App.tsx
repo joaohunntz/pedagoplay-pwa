@@ -40,7 +40,7 @@ export default function App() {
     }
   }, [])
 
-  // ✅ OneSignal v15 - inicialização segura
+  // ✅ OneSignal v15 - safe initialization
   useEffect(() => {
     if (!(window as any).OneSignalInitialized) {
       (window as any).OneSignalInitialized = true
@@ -65,7 +65,7 @@ export default function App() {
 
   const handleEntrarAgora = () => {
     setTimeout(() => {
-      window.location.href = 'https://app--pedagoteca-9b521c1a.base44.app/'
+      window.location.href = 'https://app--pedagoplay-46c380c7.base44.app/'
     }, 2000)
   }
 
@@ -92,11 +92,11 @@ export default function App() {
       />
 
       <h1 style={{ fontSize: '2rem', color: '#1e293b' }}>
-        Uhuul! Tudo certo. Vamos começar?
+        Woohoo! All set. Shall we start?
       </h1>
 
       <p style={{ color: '#475569', marginBottom: 30, maxWidth: 300 }}>
-        Toque no botão abaixo para instalar o aplicativo ou continue agora mesmo.
+        Tap the button below to install the app or continue right away.
       </p>
 
       {!installed && (
@@ -114,15 +114,14 @@ export default function App() {
             cursor: 'pointer'
           }}
         >
-          📲 Instalar Aplicativo
+          📲 Install App
         </button>
       )}
 
       {isIphone && showGif && (
         <div style={{ maxWidth: 320 }}>
           <p style={{ fontSize: '14px', color: '#475569' }}>
-            Toque em <strong>Compartilhar</strong> e depois em{' '}
-            <strong>“Adicionar à Tela de Início”</strong>
+            Tap on <strong>Share</strong> and then on <strong>“Add to Home Screen”</strong>
           </p>
           <img
             src="/tutorial-ios.gif"
@@ -152,11 +151,11 @@ export default function App() {
               marginBottom: '16px'
             }}
           >
-            Entrar agora
+            Enter Now
           </button>
 
           <p style={{ color: '#475569', maxWidth: 320 }}>
-            Ative as Notificações clicando no botão abaixo e fique por dentro de todas as novidades da Pedagoteca! 🎉
+            Enable Notifications by clicking the button below and stay updated with all Pedagoteca's news! 🎉
           </p>
 
           <button
@@ -164,10 +163,10 @@ export default function App() {
               (window as any).OneSignal?.isPushNotificationsEnabled?.().then((enabled: boolean) => {
                 if (!enabled) {
                   (window as any).OneSignal.registerForPushNotifications().then(() => {
-                    console.log('✅ Inscrição manual concluída.')
+                    console.log('✅ Manual subscription completed.')
                   })
                 } else {
-                  console.log('🔔 Notificações já estão ativas.')
+                  console.log('🔔 Notifications are already enabled.')
                 }
               })
             }}
@@ -182,7 +181,7 @@ export default function App() {
               fontSize: '16px'
             }}
           >
-            🔔 Ativar Notificações
+            🔔 Activate Notifications
           </button>
         </>
       )}
